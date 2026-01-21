@@ -1,0 +1,25 @@
+#Header {
+    background-color: red;
+}
+
+#settings_text {
+    color: white;
+    font-size: 14px;
+}
+
+#search_box {
+    min-width: 220px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+}
+
+#search_text {
+    color: white;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+#settings_icon {
+    background: transparent;
+}

@@ -7,8 +7,8 @@ from PyQt6.QtWidgets import (
 
 from .window import window
 from .sidebar import Sidebar
-from .panels import Panels
 from .panels.header import Header
+from .panels import Panels, LowerPanels
 
 class Content(QFrame):
     def __init__(self):
@@ -20,6 +20,7 @@ class Content(QFrame):
 
         self.vlayout.addWidget(Header())
         self.vlayout.addWidget(Panels())
+        self.vlayout.addWidget(LowerPanels())
         self.vlayout.addStretch()
 
 

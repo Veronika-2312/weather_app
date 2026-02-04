@@ -47,7 +47,7 @@ class WeatherPanel(QFrame):
 
         min_t = round(self.weather["main"]["temp_min"])
         max_t = round(self.weather["main"]["temp_max"])
-        self.minmax_label = QLabel(f"Макс: {max_t}°  Мін: {min_t}°")
+        self.minmax_label = QLabel(f"Макс: {max_t}°  Мин: {min_t}°")
         self.minmax_label.setObjectName("minmax_label")
         self.minmax_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.minmax_label.setStyleSheet("background-color: transparent")

@@ -5,36 +5,39 @@ from PyQt6.QtWidgets import (
     QHBoxLayout
 )
 
-from .window import window
 from .sidebar import Sidebar
 from .panels.header import Header
 from .panels import Panels, LowerPanels
+
 
 class Content(QFrame):
     def __init__(self):
         super().__init__()
 
-        self.vlayout = QVBoxLayout(self)
-        self.vlayout.setContentsMargins(20, 20, 20, 20)
-        self.vlayout.setSpacing(20)
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(20, 20, 20, 20)
+        layout.setSpacing(20)
 
-        self.vlayout.addWidget(Header())
-        self.vlayout.addWidget(Panels())
-        self.vlayout.addWidget(LowerPanels())
-        self.vlayout.addStretch()
+        self.header = Header()
+        layout.addWidget(self.header)
+        self.panels = Panels()
+        layout.addWidget(self.panels)
+        self.lower_panels = LowerPanels()
+        layout.addWidget(self.lower_panels)
+        layout.addStretch()
+
 
 
 main_widget = QWidget()
-main_widget.setStyleSheet("background-color: qlineargradient(x1: 1, y1: 0, x2: 0, y2: 1, stop: 0 rgba(255, 223, 86, 1), stop: 1 rgba(135, 206, 250, 1) ) ;")
+
+
+main_widget.setObjectName("MainWidget")
 
 layout = QHBoxLayout(main_widget)
 layout.setContentsMargins(0, 0, 0, 0)
 layout.setSpacing(0)
-
 sidebar = Sidebar()
-content = Content()
-
 layout.addWidget(sidebar)
+content = Content()
 layout.addWidget(content)
 
-window.setCentralWidget(main_widget)

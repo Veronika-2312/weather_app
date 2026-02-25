@@ -1,0 +1,111 @@
+#CityName, #Date, #Day{
+    font-size: 24px;
+    font-weight: 500;
+}
+#CityTime, #CityDesc, #CityMinmax{
+    font-size: 12px;
+    font-weight: 500;    
+}
+#CityTemp{
+    font-size: 44px;
+    font-weight: 500;
+}
+#SidebarScroll, #SidebarScrollArea{
+    background: transparent;
+}
+#ActiveCity{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+QWidget#MainWidget {
+    background: qlineargradient(
+        x1: 1, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0 rgba(255, 223, 86, 1),
+        stop: 1 rgba(135, 206, 250, 1)
+    );
+}
+#ThemeBtn {
+    background-color: rgba(255, 255, 255, 0.35);
+    border: none;
+    border-radius: 6px;
+}
+#ThemeBtn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#Today{
+    font-size: 16px;
+    font-weight: 500; 
+}
+
+#Time{
+    font-size: 29px;
+    font-weight: 500; 
+}
+
+#city {
+    font-size: 44px;
+    font-weight: 500;
+}
+
+#temp_label {
+    font-size: 74px;
+    font-weight: 500;
+}
+
+#desc_label {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#minmax_label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#weatherTodayTitle {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#GraphAxis {
+    font-size: 12px;
+    font-weight: 500;
+}
+#ForecastTemplate,
+#WeatherPanel,
+#WeatherToday,
+#Forecast12H {
+    border-radius: 10px;
+}
+#position {
+    font-size: 16px;
+    font-weight: 500;
+}
+#WeatherItemTime {
+    font-size: 12px;
+    font-weight: 500;
+}
+#WeatherItemTemp {
+    font-size: 14px;
+    font-weight: 500;
+}
+#settings_text,
+#search_text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#WeatherItem {
+    font-size: 12px;
+}
+ #HeaderText {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#HeaderIconFrame {
+    border-radius: 4px;
+}

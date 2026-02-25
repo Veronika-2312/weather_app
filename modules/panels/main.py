@@ -8,8 +8,6 @@ class Panels(QWidget):
         super().__init__()
 
         self.setFixedHeight(310)
-        self.setStyleSheet("background-color: red")
-
         layout = QHBoxLayout(self)
         layout.setSpacing(10)
         layout.setContentsMargins(0, 0, 0, 0)

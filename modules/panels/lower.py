@@ -10,6 +10,7 @@ class LowerPanels(QWidget):
         layout = QVBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)
         layout.setSpacing(20)
-
-        layout.addWidget(WeatherToday())
-        layout.addWidget(Forecast12H())
+        self.weather_today = WeatherToday()
+        layout.addWidget(self.weather_today)
+        self.forecast_12h = Forecast12H()
+        layout.addWidget(self.forecast_12h)

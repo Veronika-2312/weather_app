@@ -1,0 +1,44 @@
+#Sidebar{
+    background-color: rgba(0, 0, 0, 0.4)
+}
+#CityName, #Day, #Date, #Today, #Time,#weatherTodayTitle,#city,#temp_label,#GraphAxis, #Templabel, #Timelabel{
+    color: white;
+}
+#CityTime, #CityDesc, #CityMinmax, #CityTemp,#desc_label,#minmax_label,#position,#WeatherItemTemp,#WeatherItemTime{
+    color:rgba(255, 255, 255, 0.8)
+}
+#TimePanel, #Clock,#ForecastTemplate,#WeatherPanel,#WeatherToday,#Forecast12H,#HeaderIconFrame{
+    background-color: rgba(0, 0, 0, 0.2)
+}
+#Line,#ForecastLine,#WeatherLine{
+    background-color: rgba(255, 255, 255, 0.2)
+}
+#GraphBar{
+    background-color: transparent 
+}
+#GraphBar {
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0 rgba(255, 223, 86, 1),
+        stop: 1 rgba(135, 206, 250, 1)
+    );
+    border-radius: 3px;
+}
+#settings_text,
+#search_text {
+    color: white;
+}
+
+#WeatherItem {
+    color: white;
+}
+#Header {
+    background: transparent;
+}
+
+#HeaderText {
+    color: white;
+}
+
+
